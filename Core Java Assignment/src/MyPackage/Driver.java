@@ -21,7 +21,8 @@ public class Driver {
 		int Answer4 = Q4.Factorial(6);
 		System.out.println("\n\n\033[1mQ4 Factorial of 6 is: \033[0m"+ Answer4);
 		System.out.println("\n\033[1mQ5 shortened string: \033[0m" + Q5.IndexedStr(inputStr, 7)); 
-		Q6.isEven(68);
+		Q6.isEven(119);
+		
 		
 	};
 		
