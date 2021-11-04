@@ -1,25 +1,31 @@
 package MyPackage;
 import java.util.Arrays;
 // import java.util.Scanner;
+import Questions.Q1;
 
 public class Driver {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		int[] anArray = new int[]{ 1,0,5,6,3,2,3,7,9,8,4 };
-		int arrayLength = anArray.length;
-		for (int k = 1; k < arrayLength - 1; k++) 
-		{
-			for (int i = 0; i < arrayLength - k; i++) 
-			{
-				if (anArray[i] > anArray[i+1]) {
-					int arrayI = anArray[i];
-					anArray[i] = anArray[i+1];
-					anArray[i+1] = arrayI;
-				}
-			};
-		};
+//		int arrayLength = anArray.length;
+//		for (int k = 1; k < arrayLength - 1; k++) 
+//		{
+//			for (int i = 0; i < arrayLength - k; i++) 
+//			{
+//				if (anArray[i] > anArray[i+1]) {
+//					int arrayI = anArray[i];
+//					anArray[i] = anArray[i+1];
+//					anArray[i+1] = arrayI;
+//				}
+//			};
+//		};
+//		System.out.println("Answer to Q1 is: ");
+//		System.out.println( Arrays.toString( anArray ));
+//		System.out.println();
+		int[] sortedArray = Q1.BubbleSort(anArray);
 		System.out.println("Answer to Q1 is: ");
-		System.out.println( Arrays.toString( anArray ));
+		System.out.println( Arrays.toString( sortedArray ));
+		
 		
 		int fibonacciLength = 25;
 		int first = 0;
