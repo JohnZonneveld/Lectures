@@ -3,7 +3,6 @@ package Questions;
 public class Q3 {
 
 	public static void ReverseStr(String args) {
-//		String inputString = "Pega cohort September 20th 2021";
 		System.out.println("\n\nQ3 String before reverse: " + args);
 		char[] chars = args.toCharArray();
 		int length = chars.length;
