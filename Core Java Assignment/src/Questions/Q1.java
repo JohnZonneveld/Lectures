@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Q1 {
 	public static int[] BubbleSort(int[] array) {
-		System.out.println("Q1 unsorted array: ");
+		System.out.print("Q1 unsorted array: ");
 		System.out.println( Arrays.toString( array ));
 		int arrayLength = array.length;
 		for (int k = 1; k < arrayLength - 1; k++) 

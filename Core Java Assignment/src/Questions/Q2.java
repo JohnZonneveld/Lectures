@@ -5,14 +5,15 @@ public class Q2 {
 	public static int[] Fibonacci(int fib) {
 		int first = 0;
 		int second = 1;
-		System.out.println("\nAnswer to Q2 is: ");
-		for (int i = 1; i < fib; i++) {
-			System.out.print(first + ", ");
+		System.out.println("\n\033[1mQ2 Fibonacci of 25 is: \033[0m");
+		for (int i = 0; i < fib; i++) {
+			System.out.print(first);
 			int sum = first + second;
 			first = second;
-			// System.out.println("first " + first);
 			second = sum;
-			// System.out.println("second " + second);
+			if (i != fib-1) {
+				System.out.print(", ");
+			}
 		}
 		return null;
 
