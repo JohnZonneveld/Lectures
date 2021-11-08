@@ -35,7 +35,7 @@ public class Q9 {
 				
 			i++;
 		}
-		System.out.println("\033[1m\nQ9 Prime number : \033[0m");
+		System.out.println("\033[1m\nQ9\nPrime numbers : \033[0m");
 		for (Integer prime : primes) {
 			System.out.print(prime + " ");
 		}
