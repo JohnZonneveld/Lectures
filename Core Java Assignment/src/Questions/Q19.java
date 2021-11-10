@@ -1,11 +1,9 @@
 package Questions;
 
-import static org.junit.Assume.assumeFalse;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.IntStream;
+
 
 public class Q19 {
 
@@ -25,11 +23,11 @@ public class Q19 {
 				oddsum += arr.get(i);
 			}
 		}
-		System.out.println("total of even numbers is: " + evensum);
+		System.out.println("\ntotal of even numbers is: " + evensum);
 		System.out.println("total of odd numbers is:" + oddsum);
 		
 		keepNonPrimes(arr);
-		System.out.println("\nAfter removing of primes the array list contains:");
+		System.out.println("After removing of primes the array list contains:");
 		for (Integer num : arr) {
 			System.out.print(num + " ");
 		}
@@ -38,10 +36,9 @@ public class Q19 {
 	public static void keepNonPrimes(List<Integer> nums) {
 
         for (int i = 0 ; i < nums.size() ; i++) {
-        	System.out.println("size: " +nums.size());
-        	System.out.println("nums :"+ nums);
             if (isPrime(nums.get(i))) {
                 nums.remove(i);
+                // lower the index if a number is removed as everything shifts down 
                 i--;
             }
         }
