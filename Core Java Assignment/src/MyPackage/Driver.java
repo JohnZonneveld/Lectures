@@ -33,6 +33,7 @@ public class Driver {
 		int[] anArray = new int[]{ 1,0,5,6,3,2,3,7,9,8,4 };
 		int[] sortedArray = Q1.BubbleSort(anArray);
 		String inputStr = "Pega cohort September 20th 2021";
+		String inputQ18 = "the quick brown fox jumps over the lazy dog";
 
 		System.out.println("\033[1mSorted array: \033[0m");
 		System.out.println( Arrays.toString( sortedArray ));
@@ -55,10 +56,10 @@ public class Driver {
 		Q16.commandLine("Hello");
 		Q17.Interest();
 		Q18 string = new Q18();
-		System.out.println("Input string is: " + inputStr);
-		System.out.println("Are there uppercase characters in the string (true/false): \n" + string.checkForUpper(inputStr));
-		System.out.println("String converted to lower case\n" + string.toLowers(inputStr));
-		System.out.println("String total numeric value: " + string.toInteger(inputStr));
+		System.out.println("Input string is: " + inputQ18);
+		System.out.println("Are there uppercase characters in the string (true/false): \n" + string.checkForUpper(inputQ18));
+		System.out.println("String converted to lower case\n" + string.toUppers(inputQ18));
+		System.out.println("String total numeric value: " + string.toInteger(inputQ18));
 		Q19.main(args);
 		Q20.main(args);		
 	

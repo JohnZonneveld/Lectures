@@ -19,12 +19,12 @@ public class Q18 extends Q18Upperclass {
 
 	@Override
 	public
-	String toLowers(String str) {
-		String lowercaseString = "";
+	String toUppers(String str) {
+		String uppercaseString = "";
 		for (int i = 0; i < str.length(); ++i) {
-			lowercaseString += Character.toLowerCase(str.charAt(i));
+			uppercaseString += Character.toUpperCase(str.charAt(i));
 		}
-		return lowercaseString;
+		return uppercaseString;
 	}
 
 	@Override

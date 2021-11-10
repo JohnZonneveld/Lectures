@@ -13,9 +13,9 @@ public class Q20 {
       while (myReader.hasNextLine()) {
         String data = myReader.nextLine();
         String[] lineData = data.split(":");
-        System.out.println("\nName: " + lineData[0] + " " + lineData[1]);
+        System.out.println("Name: " + lineData[0] + " " + lineData[1]);
         System.out.println("Age: " + lineData[2] + " years");
-        System.out.println("State: " + lineData[3] + " State");
+        System.out.println("State: " + lineData[3] + " State\n");
       }
       myReader.close();
     } catch (FileNotFoundException e) {
